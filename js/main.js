@@ -24,7 +24,6 @@ $(document).ready(function(){
 		fire.latlng = e.latlng;
 		fire.lat = e.latlng.lat;
 		fire.lng = e.latlng.lat;
-		console.log(fire);
 	})
 
 	//$('.content img').addClass('pure-img');
