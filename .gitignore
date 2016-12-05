@@ -5,6 +5,7 @@
 .sass-cache/*
 css/.sass-cache
 css/.sass-cache/*
+authy.js
 
 .DS_Store
 .DS_Store?
