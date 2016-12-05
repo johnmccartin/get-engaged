@@ -18,6 +18,7 @@
 
          <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
          <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+         <script src="authy.js"></script>
 
          <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.0/build/pure-min.css">
          <!--[if lte IE 8]>
@@ -40,13 +41,26 @@
 
         <div class="layout pure-g">
 
-            <div class="left-pane pure-u-1-2">
-                <div id="mapid"></div>
-            </div>
+
+            <header class="nav-menu pure-u-1 padding-1 dark">
+                <h1 class="no-mp">Get Engaged</h1>
+                    
+            </header>
 
 
-            <div class="right-pane pure-u-1-2">
-            </div>
+
+
+            <div class="content pure-u-1 pure-g no-mp">
+
+
+                <div class="left-pane pure-u-3-5">
+                    <div id="mapid"></div>
+                </div>
+
+
+                <div class="right-pane pure-u-2-5">
+                </div>
+            </div><!--content-->
 
         </div>
 

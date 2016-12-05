@@ -259,12 +259,19 @@ __   ____ _ _ __(_) __ _| |__ | | ___  ___
   border-color: yellow;
 }
 
-/* line 1, ../sass/_menu.scss */
-.nav-menu {
-  background: #666;
+/* line 2, ../sass/_mapping.scss */
+#mapid {
+  height: 100%;
+  min-height: 100px;
 }
 
-/* line 5, ../sass/_menu.scss */
+/* line 3, ../sass/_menu.scss */
+.nav-menu {
+  min-height: 2.5em;
+  height: 5vh;
+}
+
+/* line 8, ../sass/_menu.scss */
 .pure-menu ul {
   visibility: visible;
   top: auto;
@@ -272,23 +279,23 @@ __   ____ _ _ __(_) __ _| |__ | | ___  ___
   position: relative;
 }
 
-/* line 13, ../sass/_menu.scss */
+/* line 16, ../sass/_menu.scss */
 .pure-menu.pure-menu-open, .pure-menu.pure-menu-horizontal li .pure-menu-children {
   background: transparent;
   border: 0px;
 }
 
-/* line 18, ../sass/_menu.scss */
+/* line 21, ../sass/_menu.scss */
 .pure-menu a, .pure-menu .pure-menu-can-have-children > li:after {
   color: #222;
 }
 
-/* line 22, ../sass/_menu.scss */
+/* line 25, ../sass/_menu.scss */
 .pure-menu li a {
   padding: 5px 0px;
 }
 
-/* line 26, ../sass/_menu.scss */
+/* line 29, ../sass/_menu.scss */
 .pure-menu li a:hover, .pure-menu li a:focus {
   color: #222;
   background: orange;
@@ -522,24 +529,14 @@ __   ____ _ _ __(_) __ _| |__ | | ___  ___
 }
 
 @media screen and (min-width: 48em) {
-  /* line 4, ../sass/_queries.scss */
-  .nav-menu {
-    background: transparent;
-  }
-
-  /* line 9, ../sass/_queries.scss */
+  /* line 8, ../sass/_queries.scss */
   .md-pull-down {
     bottom: 0;
   }
 
-  /* line 14, ../sass/_queries.scss */
+  /* line 13, ../sass/_queries.scss */
   .header {
     position: fixed;
-  }
-
-  /* line 18, ../sass/_queries.scss */
-  .content {
-    padding-top: 2em;
   }
 }
 /* line 1, ../sass/_text.scss */
@@ -588,57 +585,57 @@ __   ____ _ _ __(_) __ _| |__ | | ___  ___
   z-index: -99997;
 }
 
-/* line 138, ../sass/main.scss */
+/* line 139, ../sass/main.scss */
 html, body {
   height: 100%;
   width: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
-/* line 144, ../sass/main.scss */
+/* line 145, ../sass/main.scss */
 html, button, input, select, textarea,
 .pure-g [class*="pure-u"] {
   font-family: "Roboto", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
-/* line 149, ../sass/main.scss */
+/* line 150, ../sass/main.scss */
 ::selection {
   background: orange;
   color: #fff;
 }
 
-/* line 153, ../sass/main.scss */
+/* line 154, ../sass/main.scss */
 ::-moz-selection {
   background: orange;
   color: #fff;
 }
 
-/* line 158, ../sass/main.scss */
+/* line 159, ../sass/main.scss */
 body {
   color: #222;
 }
 
-/* line 161, ../sass/main.scss */
+/* line 162, ../sass/main.scss */
 a {
   color: #222;
 }
 
-/* line 165, ../sass/main.scss */
+/* line 166, ../sass/main.scss */
 a:hover {
   background: orange;
 }
 
-/* line 169, ../sass/main.scss */
+/* line 170, ../sass/main.scss */
 .link-on-dark {
   color: #fff;
 }
 
-/* line 173, ../sass/main.scss */
+/* line 174, ../sass/main.scss */
 .link-no-decor {
   text-decoration: none;
 }
 
-/* line 178, ../sass/main.scss */
+/* line 179, ../sass/main.scss */
 .pure-g > div {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -646,18 +643,27 @@ a:hover {
   box-sizing: border-box;
 }
 
-/* line 185, ../sass/main.scss */
+/* line 186, ../sass/main.scss */
 .layout {
   min-height: 100%;
   position: relative;
 }
 
-/* line 192, ../sass/main.scss */
+/* line 191, ../sass/main.scss */
+.content {
+  height: 91vh;
+}
+/* line 194, ../sass/main.scss */
+.content .left-pane {
+  height: 100%;
+}
+
+/* line 200, ../sass/main.scss */
 .reader {
   max-width: 800px;
 }
 
-/* line 200, ../sass/main.scss */
+/* line 208, ../sass/main.scss */
 .brand-title {
   font-size: 2.3em;
 }

@@ -126,6 +126,7 @@ $desktop-break: 81.25em;
 @import 'border';
 @import 'dark';
 @import 'debug';
+@import 'mapping';
 @import 'menu';
 @import 'mp';
 @import 'positioners';
@@ -138,7 +139,7 @@ $desktop-break: 81.25em;
 html, body {
   height: 100%;
   width: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 html, button, input, select, textarea,
@@ -187,6 +188,13 @@ a:hover {
   position: relative;
 }
 
+.content {
+  height: 91vh;
+
+  .left-pane {
+    height: 100%;
+  }
+}
 
 
 .reader {
